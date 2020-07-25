@@ -11,7 +11,7 @@ public class WordExtractor {
 
     public List<String> extractWords(String book){
 
-        StringTokenizer stringTokenizer = new StringTokenizer(book, " ");
+        StringTokenizer stringTokenizer = new StringTokenizer(book, " \n\"';:-?!.,");
         List<String> result = new ArrayList<>();
         while (stringTokenizer.hasMoreTokens()) {
             result.add(stringTokenizer.nextToken());
