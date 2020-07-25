@@ -43,7 +43,7 @@ class WordCountServiceTest {
         Assertions.assertEquals("{\"words\":[{\"word\":\"am\",\"count\":2},{\"word\":\"i\",\"count\":1},{\"word\":\"grut\",\"count\":1}]}", s);
     }
 
-    @Value("classpath:duneshort.txt")
+    @Value("classpath:dune.txt")
     private Resource resource;
 
     public static String asString(Resource resource) {
